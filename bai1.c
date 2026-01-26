@@ -1,5 +1,5 @@
 /******************************************************************************
- * Họ và tên: [Lê MInh TƯờng]
+ * Họ và tên: [Lê Minh Tường]
  * MSSV :      [PS37909]
  * Lớp:       [CS21301]
  *****************************************************************************/
@@ -19,12 +19,39 @@
 
 int main()
 {
+    float diem;
 
-    // Khai báo biến
+    printf("Nhập điểm của sinh viên: ");
+    scanf("%f", &diem);
 
-    // Nhập dữ liệu
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
+    if (0 < diem && diem < 3.5)
+    {
+        printf("Sinh viên học lực kém");
+    }
+    else if (diem < 5)
+    {
+        printf("Sinh viên học lực yếu");
+    }
+    else if (diem < 6.5)
+    {
+        printf("Sinh viên học lực trung bình");
+    }
+    else if (diem < 8)
+    {
+        printf("Sinh viên học lực khá");
+    }
+    else if (diem < 9)
+    {
+        printf("Sinh viên học lực giỏi");
+    }
+    else if (diem < 10)
+    {
+        printf("Sinh viên học lực xuất sắc");
+    }
+    else
+    {
+        printf("Điểm cho sinh viên phải từ 0 -> 10");
+    }
 
     return 0;
 }
